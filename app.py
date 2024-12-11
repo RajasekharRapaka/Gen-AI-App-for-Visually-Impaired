@@ -21,12 +21,15 @@ from gtts import gTTS
 pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 
 # Read the API key from a text file
-try:
-    with open("API Key.txt", "r") as f:
-        key = f.read().strip()
-except FileNotFoundError:
-    st.error("API Key file not found. Please provide a valid API Key.")
-    st.stop()
+# try:
+#     with open("API Key.txt", "r") as f:
+#         key = f.read().strip()
+# except FileNotFoundError:
+#     st.error("API Key file not found. Please provide a valid API Key.")
+#     st.stop()
+
+# Api Key from cloud
+key = os.getenv("API Key")
 
 # Initialize models through LangChain
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", api_key=key)  
