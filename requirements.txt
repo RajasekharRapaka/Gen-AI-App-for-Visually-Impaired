@@ -1,4 +1,4 @@
-pip install Streamlit
+pip install streamlit
 pip install google-generativeai
 pip install sunds - Scene Understanding Module
 pip install text-to-speech - Text - to - Speech
