@@ -17,4 +17,3 @@ Unicode
 tesseract-ocr
 pyttsx3
 langchain-community
-tesseract-ocr
