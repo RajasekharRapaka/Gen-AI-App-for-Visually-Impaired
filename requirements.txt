@@ -1,19 +1,19 @@
-pip install streamlit
-pip install google-generativeai
-pip install sunds
-pip install text-to-speech
-pip install object-detection
-pip install modules
-pip install langchain
-pip install pillow
-pip install pytesseract
-pip install gTTS
-pip install langchain-google-genai
-pip install apikey
-pip install Python-IO
-pip install opencv-python
-pip install Unicode
-pip install tesseract-ocr
-pip install pyttsx3
-pip install langchain-community
-pip install google-generativeai langchain langchain-google-genai
+ streamlit
+ google-generativeai
+ sunds
+ text-to-speech
+ object-detection
+ modules
+ langchain
+ pillow
+ pytesseract
+ gTTS
+ langchain-google-genai
+ apikey
+ Python-IO
+ opencv-python
+ Unicode
+ tesseract-ocr
+ pyttsx3
+ langchain-community
+ google-generativeai langchain langchain-google-genai
