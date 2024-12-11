@@ -18,5 +18,4 @@ tesseract-ocr
 pyttsx3
 langchain-community
 tesseract-ocr
-libtesseract-dev
 libleptonica-dev
