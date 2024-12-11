@@ -1,11 +1,11 @@
 pip install streamlit
 pip install google-generativeai
-pip install sunds - Scene Understanding Module
-pip install text-to-speech - Text - to - Speech
-pip install object-detection - Object Detection
+pip install sunds
+pip install text-to-speech
+pip install object-detection
 pip install modules
 pip install langchain
-pip install pillow - PIL [Python Image Library]
+pip install pillow
 pip install pytesseract
 pip install gTTS
 pip install langchain-google-genai
