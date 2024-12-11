@@ -18,7 +18,7 @@ from gtts import gTTS
 # ================================
 
 # Set Tesseract OCR path
-pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 
 # Read the API key from a text file
 try:
