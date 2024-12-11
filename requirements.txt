@@ -1,19 +1,21 @@
- streamlit
- google-generativeai
- sunds
- text-to-speech
- object-detection
- modules
- langchain
- pillow
- pytesseract
- gTTS
- langchain-google-genai
- apikey
- Python-IO
- opencv-python
- Unicode
- tesseract-ocr
- pyttsx3
- langchain-community
- tesseract-ocr
+streamlit
+google-generativeai
+sunds
+text-to-speech
+object-detection
+modules
+langchain
+pillow
+pytesseract
+gTTS
+langchain-google-genai
+apikey
+Python-IO
+opencv-python
+Unicode
+tesseract-ocr
+pyttsx3
+langchain-community
+tesseract-ocr
+libtesseract-dev
+libleptonica-dev
