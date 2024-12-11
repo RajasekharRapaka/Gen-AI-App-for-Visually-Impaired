@@ -16,4 +16,3 @@
  tesseract-ocr
  pyttsx3
  langchain-community
- google-generativeai langchain langchain-google-genai
