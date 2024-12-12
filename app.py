@@ -33,7 +33,7 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 # key = st.secrets["GEMINI_API_KEY"]
 
 # API Key from Secrets
-key = st.write(os.environ["GEMINI_API_KEY"])
+key = st.secrets(os.environ["GEMINI_API_KEY"])
 
 # Initialize models through LangChain
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", api_key=key)  
@@ -273,4 +273,4 @@ st.markdown(
 )
 
 # Note: Uncomment the line below to run the Streamlit app
-streamlit run app.py
+# streamlit run app.py
