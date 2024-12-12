@@ -30,10 +30,10 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 
 # Api Key from cloud
 # key = os.getenv("API Key")
-# key = st.secrets["GEMINI_API_KEY"]
+key = st.secrets["GEMINI_API_KEY"]
 
 # API Key from Secrets
-key = st.secrets(os.environ["GEMINI_API_KEY"])
+# key = st.secrets(["GEMINI_API_KEY"])
 
 # Initialize models through LangChain
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", api_key=key)  
