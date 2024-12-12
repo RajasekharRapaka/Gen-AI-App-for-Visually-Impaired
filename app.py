@@ -29,8 +29,8 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 #     st.stop()
 
 # Api Key from cloud
-# key = os.getenv("API Key")
-key = st.secrets["GEMINI_API_KEY"]
+key = os.getenv("API Key.txt")
+# key = st.secrets["GEMINI_API_KEY"]
 
 # API Key from Secrets
 # key = st.secrets(["GEMINI_API_KEY"])
