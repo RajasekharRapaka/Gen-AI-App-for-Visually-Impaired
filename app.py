@@ -273,4 +273,4 @@ st.markdown(
 )
 
 # Note: Uncomment the line below to run the Streamlit app
-# streamlit run app.py
+streamlit run app.py
