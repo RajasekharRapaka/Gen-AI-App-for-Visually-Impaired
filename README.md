@@ -1,4 +1,5 @@
 # Gen-AI-App-for-Visually-Impaired
+Try the app : 
 
 Vision360 🔬
 Project Documentation :  
