@@ -37,8 +37,8 @@ key = os.environ.get("GEMINI_API_KEY")
 # key = st.secrets(["GEMINI_API_KEY"])
 
 # Initialize models through LangChain
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", api_key=key)  
-vision_llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", api_key=key)  
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key=key)  
+vision_llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key=key)  
 
 # Function to stream response data
 # Scene Understanding
