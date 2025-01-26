@@ -138,19 +138,6 @@ def text_to_speech(text):
         handle_error(e)
 
 
-def retry_with_backoff(func, max_retries=5, initial_delay=1):
-    delay = initial_delay
-    for attempt in range(max_retries):
-        try:
-            return func()
-        except Exception as e:
-            if "Resource has been exhausted" in str(e):
-                time.sleep(delay)
-                delay *= 2  # Exponential backoff
-            else:
-                raise e
-    raise Exception("Max retries reached")
-
 # ================================
 # Streamlit App Layout and Logic
 # ================================        
