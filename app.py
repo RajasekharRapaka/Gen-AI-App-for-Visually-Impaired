@@ -190,7 +190,8 @@ st.markdown('<div class="main-title">Vision360 🔬</div>', unsafe_allow_html=Tr
 st.markdown('<div class="subtitle">Empowering Accessibility through AI - Scene Insights, Text Recognition, and Speech Conversion</div>', unsafe_allow_html=True)
 
 # Sidebar Configuration
-logo_path = r"C:\Users\rjsek\OneDrive\Documents\Work and Professional documents\Innomatics Research Labs\Data Science Internship Sep 2024\Tasks\Gen AI App for Visually Impaired People - Final Project\logo.png"
+# logo_path = r"C:\Users\rjsek\OneDrive\Documents\Work and Professional documents\Innomatics Research Labs\Data Science Internship Sep 2024\Tasks\Gen AI App for Visually Impaired People - Final Project\logo.png"
+logo_path = os.get("logo.png")
 if os.path.exists(logo_path):
     st.sidebar.image(logo_path, width=300)
 else:
