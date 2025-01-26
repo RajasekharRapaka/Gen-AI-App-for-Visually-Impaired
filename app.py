@@ -191,7 +191,7 @@ st.markdown('<div class="subtitle">Empowering Accessibility through AI - Scene I
 
 # Sidebar Configuration
 # logo_path = r"C:\Users\rjsek\OneDrive\Documents\Work and Professional documents\Innomatics Research Labs\Data Science Internship Sep 2024\Tasks\Gen AI App for Visually Impaired People - Final Project\logo.png"
-logo_path = os.get("logo.png")
+logo_path = os.path.join(os.getcwd(), "logo.png")
 if os.path.exists(logo_path):
     st.sidebar.image(logo_path, width=300)
 else:
