@@ -152,6 +152,20 @@ def retry_with_backoff(func, max_retries=5, initial_delay=1):
                 raise e
     raise Exception("Max retries reached")
 
+# Restrict Multiple Requests
+def retry_with_backoff(func, max_retries=5, initial_delay=1):
+    delay = initial_delay
+    for attempt in range(max_retries):
+        try:
+            return func()
+        except Exception as e:
+            if "Resource has been exhausted" in str(e):
+                time.sleep(delay)
+                delay *= 2  # Exponential backoff
+            else:
+                raise e
+    raise Exception("Max retries reached")1
+
 # ================================
 # Streamlit App Layout and Logic
 # ================================        
