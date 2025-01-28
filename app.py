@@ -30,17 +30,16 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 #     st.stop()
 
 # Opening Key
-# Automatically loads the credentials from the environment variable
-credentials, project = default()
 
 # Api Key from cloud
 # key = os.environ.get("GEMINI_API_KEY")
 # key = os.environ.get("KEY")
 # key = os.getenv("GEMINI_API_KEY")
-key = st.secrets["GEMINI_API_KEY"]
+# key = st.secrets["GEMINI_API_KEY"]
 
 # API Key from Secrets
 # key = st.secrets(["GEMINI_API_KEY"])
+key = os.getenv("GEMINI_API_KEY", st.secrets["GEMINI_API_KEY"])
 
 # Initialize models through LangChain
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", api_key=key)  
