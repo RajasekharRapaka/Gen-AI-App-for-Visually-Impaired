@@ -12,6 +12,7 @@ from langchain.chains import LLMChain
 #from langchain_google_genai import GoogleGenerativeAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from gtts import gTTS
+from google.auth import default
 
 # ================================
 # Configuration and Initialization
@@ -27,6 +28,10 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 # except FileNotFoundError:
 #     st.error("API Key file not found. Please provide a valid API Key.")
 #     st.stop()
+
+# Opening Key
+# Automatically loads the credentials from the environment variable
+credentials, project = default()
 
 # Api Key from cloud
 key = os.environ.get("GEMINI_API_KEY")
