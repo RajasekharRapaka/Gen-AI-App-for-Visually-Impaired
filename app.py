@@ -13,6 +13,7 @@ from langchain.chains import LLMChain
 from langchain_google_genai import ChatGoogleGenerativeAI
 from gtts import gTTS
 from google.auth import default
+from dotenv import load_dotenv
 
 # ================================
 # Configuration and Initialization
@@ -30,10 +31,14 @@ pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 #     st.stop()
 
 # Opening Key
+# Environment Key
+load_dotenv()
+os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Api Key from cloud
 # key = os.environ.get("GEMINI_API_KEY")
-key = os.getenv("GEMINI_API_KEY")
+# key = os.getenv("GEMINI_API_KEY")
 # key = st.secrets["GEMINI_API_KEY"]
 
 # API Key from Secrets
