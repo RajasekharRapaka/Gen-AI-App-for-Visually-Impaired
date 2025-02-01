@@ -1,5 +1,5 @@
 # Gen-AI-App-for-Visually-Impaired
-Try the app : 
+Try the app : https://huggingface.co/spaces/iRaaz/Vision_360
 
 Vision360 🔬
 Project Documentation :  
